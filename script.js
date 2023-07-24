@@ -37,11 +37,11 @@ class NovasTerminal {
     }
     get_daily_output() {
         const [gold, pentagons, octagons, ch1mats, whetstones] = this._compute_output_daily();
-        return `${gold.toLocaleString("en-US")} Gold<br/>${pentagons} <img src="images/icons/Pentagon_Gem.png" width="20" height="20"> ⇒ ${octagons} <img src="images/icons/Octagon_Gem.png" width="20" height="20"><br/>${ch1mats} stacks of Ch.1 Mats<br/>${whetstones} stacks of Whetstones`
+        return `${gold.toLocaleString("en-US")} Gold<br/>${pentagons} <img src="images/icons/Pentagon_Gem.png" width="25" height="25"> ⇒ ${octagons} <img src="images/icons/Octagon_Gem.png" width="20" height="20"><br/>${ch1mats} stacks of Ch.1 Mats<br/>${whetstones} stacks of Whetstones`
     }
     get_max_capacity_output() {
         const [gold, pentagons, octagons, ch1mats, whetstones] = this._compute_output_max_capacity();
-        return `${gold.toLocaleString("en-US")} Gold<br/>${pentagons} <img src="images/icons/Pentagon_Gem.png" width="20" height="20"> ⇒ ${octagons} <img src="images/icons/Octagon_Gem.png" width="20" height="20"><br/>${ch1mats} stacks of Ch.1 Mats<br/>${whetstones} stacks of Whetstones`
+        return `${gold.toLocaleString("en-US")} Gold<br/>${pentagons} <img src="images/icons/Pentagon_Gem.png" width="25" height="25"> ⇒ ${octagons} <img src="images/icons/Octagon_Gem.png" width="20" height="20"><br/>${ch1mats} stacks of Ch.1 Mats<br/>${whetstones} stacks of Whetstones`
     }
 
     _compute_stats() {
