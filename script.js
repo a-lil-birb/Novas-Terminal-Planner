@@ -37,11 +37,11 @@ class NovasTerminal {
     }
     get_daily_output() {
         const [gold, pentagons, octagons, ch1mats, whetstones] = this._compute_output_daily();
-        return `${gold.toLocaleString("en-US")} Gold<br/>${pentagons} <img src="images/icons/Pentagon_Gem.png" width="25" height="25"> ⇒ ${octagons} <img src="images/icons/Octagon_Gem.png" width="20" height="20"><br/>${ch1mats} stacks of Ch.1 Mats<br/>${whetstones} stacks of Whetstones`
+        return `${gold.toLocaleString("en-US")} Gold<br/>${pentagons} <img src="images/icons/Pentagon_Gem.png" width="25" height="25"> ⇒ ${octagons} <img src="images/icons/Octagon_Gem.png" width="25" height="25"><br/>${ch1mats} stacks of Ch.1 Mats<br/>${whetstones} stacks of Whetstones`
     }
     get_max_capacity_output() {
         const [gold, pentagons, octagons, ch1mats, whetstones] = this._compute_output_max_capacity();
-        return `${gold.toLocaleString("en-US")} Gold<br/>${pentagons} <img src="images/icons/Pentagon_Gem.png" width="25" height="25"> ⇒ ${octagons} <img src="images/icons/Octagon_Gem.png" width="20" height="20"><br/>${ch1mats} stacks of Ch.1 Mats<br/>${whetstones} stacks of Whetstones`
+        return `${gold.toLocaleString("en-US")} Gold<br/>${pentagons} <img src="images/icons/Pentagon_Gem.png" width="25" height="25"> ⇒ ${octagons} <img src="images/icons/Octagon_Gem.png" width="25" height="25"><br/>${ch1mats} stacks of Ch.1 Mats<br/>${whetstones} stacks of Whetstones`
     }
 
     _compute_stats() {
@@ -62,13 +62,13 @@ class NovasTerminal {
     // gold, drill, t1, tw
     add_facility(name) {
         if (name === "gold") {
-            this.num_goldgens = Math.min(99,this.num_goldgens-1);
+            this.num_goldgens = Math.min(99,this.num_goldgens+1);
         } else if (name === "drill") {
-            this.num_drills = Math.min(99,this.num_drills-1);
+            this.num_drills = Math.min(99,this.num_drills+1);
         } else if (name === "t1") {
-            this.num_t1 = Math.min(99,this.num_t1-1);
+            this.num_t1 = Math.min(99,this.num_t1+1);
         } else if (name === "tw") {
-            this.num_twhet = Math.min(99,this.num_twhet-1);
+            this.num_twhet = Math.min(99,this.num_twhet+1);
         }
         this._compute_stats()
     }
