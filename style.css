@@ -14,6 +14,26 @@ button {
     border-color: #5AB0C0;
 }
 
+input {
+    background: #244256;
+    color: #62BDCF;
+    text-align: center;
+    font-family: 'Courier', monospace;
+    border: 2px solid black;
+    border-color: #5AB0C0;
+}
+
+.display {
+    background: #1A2F3E;
+    color: #62BDCF;
+    text-align: center;
+    font-family: 'Courier', monospace;
+    border: 2px solid black;
+    border-color: #5AB0C0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 div {
     display: inline-block;
     background-color: rgba(43, 79, 104, 0.3);
