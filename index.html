@@ -8,6 +8,10 @@
 </head>
 <body>
     <h1>Novas Terminal Planner</h1>
+    <div>
+        Fan-made planner and glorified spreadsheet for the N.O.V.A.S Terminal in <a href="https://www.roblox.com/games/563493615">PWNED: Aeternae Memori</a>
+    </div>
+    <br/><br/><br/>
     <div class="values">
         <h3>Stats</h3>
         Facility Count: <span id="facilitiescount">1/100</span><br/>
@@ -21,11 +25,9 @@
         <h3>Facilities</h3>
         <div class="mainframe">
             <div class="buttons">
-                <!--<button class="sub">-1</button>-->
-                <span class="display">
-                Level 7
-                </span>
-                <!--<button class="add">+1</button>-->
+                <button class="sub" id="mainframeDown">-1</button>
+                Level <span class="display" id="mainframe_level">7</span>
+                <button class="add" id="mainframeUp">+1</button>
             </div>
             <br/>
             Mainframe
@@ -36,9 +38,7 @@
         <div class="goldgen">
             <div class="buttons">
                 <button class="sub" id="goldSub">-1</button>
-                <span class="display" id="num_goldgens">
-                0x
-                </span>
+                <input size="2" value="0" type="text" class="inputdisplay" id="num_goldgens">x
                 <button class="add" id="goldAdd">+1</button>
             </div>
             <br/>
@@ -50,9 +50,7 @@
         <div class="drill">
             <div class="buttons">
                 <button class="sub" id="drillSub">-1</button>
-                <span class="display" id="num_drills">
-                0x
-                </span>
+                <input size="2" value="0" type="text" class="inputdisplay" id="num_drills">x
                 <button class="add" id="drillAdd">+1</button>
             </div>
             <br/>
@@ -64,9 +62,7 @@
         <div class="tensormk1">
             <div class="buttons">
                 <button class="sub" id="tmk1Sub">-1</button>
-                <span class="display" id="num_t1">
-                0x
-                </span>
+                <input size="2" value="0" type="text" class="inputdisplay" id="num_t1">x
                 <button class="add" id="tmk1Add">+1</button>
             </div>
             <br/>
@@ -78,9 +74,7 @@
         <div class="tensorwhet">
             <div class="buttons">
                 <button class="sub" id="twhetSub">-1</button>
-                <span class="display" id="num_twhet">
-                0x
-                </span>
+                <input size="2" value="0" type="text" class="inputdisplay" id="num_twhet">x
                 <button class="add" id="twhetAdd">+1</button>
             </div>
             <br/>
@@ -91,9 +85,7 @@
         <br/>
         <div class="powercell">
             <div class="buttons">
-                <span class="display" id="num_powercells">
-                0x
-                </span>
+                <span class="display" id="num_powercells">0</span>x
             </div>
             <br/>
             Power Cell
@@ -103,9 +95,7 @@
 
         <div class="grid">
             <div class="buttons">
-                <span class="display" id="num_grids">
-                0x
-                </span>
+                <span class="display" id="num_grids">0</span>x
             </div>
             <br/>
             Power Grid
@@ -119,11 +109,11 @@
         <h3>Output</h3>
         <div>
             <h3>Daily</h3>
-            <span id="daily_output">0 Gold<br/>0 Pentagons ⇒ 0 Octagons<br/>0 stacks of Ch.1 Mats<br/>0 stacks of Whetstones</span>
+            <span id="daily_output">0 Gold<br/>0 <img src="images/icons/Pentagon_Gem.png" width="20" height="20"> ⇒ 0 <img src="images/icons/Octagon_Gem.png" width="20" height="20"><br/>0 stacks of Ch.1 Mats<br/>0 stacks of Whetstones</span>
         </div>
         <div>
             <h3>Max Capacity</h3>
-            <span id="max_output">0 Gold<br/>0 Pentagons ⇒ 0 Octagons<br/>0 stacks of Ch.1 Mats<br/>0 stacks of Whetstones</span>
+            <span id="max_output">0 Gold<br/>0 <img src="images/icons/Pentagon_Gem.png" width="20" height="20"> ⇒ 0 <img src="images/icons/Octagon_Gem.png" width="20" height="20"><br/>0 stacks of Ch.1 Mats<br/>0 stacks of Whetstones</span>
         </div>
     </div>
 </body>
