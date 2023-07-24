@@ -63,17 +63,21 @@ class NovasTerminal {
     }
     rem_facility(name) {
         if (name === "gold") {
-            this.num_goldgens -= 1;
+            this.num_goldgens = max(0,this.num_goldgens-1);
         } else if (name === "drill") {
-            this.num_drills -= 1;
+            this.num_drills = max(0,this.num_drills-1);
         } else if (name === "t1") {
-            this.num_t1 -= 1;
+            this.num_t1 = max(0,this.num_t1-1);
         } else if (name === "tw") {
-            this.num_twhet -= 1;
+            this.num_twhet = max(0,this.num_twhet-1);
         }
         this._compute_stats()
     }
     set_facility(name,count) {
+        if (count<0) {
+            this._compute_stats()
+            return;
+        }
         if (name === "gold") {
             this.num_goldgens = count;
         } else if (name === "drill") {
