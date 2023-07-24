@@ -2,8 +2,21 @@ body {
     background: #1A2F3E;
     color: #62BDCF;
     text-align: center;
+    font-family: 'Courier', monospace;
+}
+
+button {
+    background: #1A2F3E;
+    color: #62BDCF;
+    text-align: center;
+    font-family: 'Courier', monospace;
+    border: 2px solid black;
+    border-color: #5AB0C0;
 }
 
 div {
     display: inline-block;
+    background-color: rgba(43, 79, 104, 0.3);
+    margin: 5px;
+    padding: 10px;
 };
