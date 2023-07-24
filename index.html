@@ -10,11 +10,11 @@
     <h1>Novas Terminal Planner</h1>
     <div class="values">
         <h3>Stats</h3>
-        <span id="facilitycount">x/y</span><br/>
-        <span id="powercapacity">0</span><br/>
-        <span id="powercreated">0</span><br/>
-        <span id="powerconsumed">0</span><br/>
-        <span id="powerremaining">0</span><br/>
+        Facility Count: <span id="facilitiescount">1/100</span><br/>
+        Power Capacity: <span id="powercapacity">0</span><br/>
+        Power Created: <span id="powercreated">0</span><br/>
+        Power Consumed: <span id="powerconsumed">0</span><br/>
+        Power Remaining: <span id="powerremaining">0</span><br/>
     </div>
     <br/>
     <div class="facilities">
@@ -28,79 +28,93 @@
                 <!--<button class="add">+1</button>-->
             </div>
             <br/>
+            Mainframe
+            <br/>
             <img src="images/Mainframe.png" alt="Mainframe" />
         </div>
         <br/>
         <div class="goldgen">
             <div class="buttons">
-                <button class="sub">-1</button>
-                <span class="display">
+                <button class="sub" id="goldSub">-1</button>
+                <span class="display" id="num_goldgens">
                 0x
                 </span>
-                <button class="add">+1</button>
+                <button class="add" id="goldAdd">+1</button>
             </div>
+            <br/>
+            Gold Generator
             <br/>
             <img src="images/Gold_Generator.png" alt="Gold Generator" />
         </div>
 
         <div class="drill">
             <div class="buttons">
-                <button class="sub">-1</button>
-                <span class="display">
+                <button class="sub" id="drillSub">-1</button>
+                <span class="display" id="num_drills">
                 0x
                 </span>
-                <button class="add">+1</button>
+                <button class="add" id="drillAdd">+1</button>
             </div>
+            <br/>
+            Underground Drill
             <br/>
             <img src="images/Underground_Drill.png" alt="Underground Drill" />
         </div>
 
         <div class="tensormk1">
             <div class="buttons">
-                <button class="sub">-1</button>
-                <span class="display">
+                <button class="sub" id="tmk1Sub">-1</button>
+                <span class="display" id="num_t1">
                 0x
                 </span>
-                <button class="add">+1</button>
+                <button class="add" id="tmk1Add">+1</button>
             </div>
+            <br/>
+            Tensor Mk.1
             <br/>
             <img src="images/Tensor_Mk1.png" alt="Tensor Mk1" />
         </div>
 
         <div class="tensorwhet">
             <div class="buttons">
-                <button class="sub">-1</button>
-                <span class="display">
+                <button class="sub" id="twhetSub">-1</button>
+                <span class="display" id="num_twhet">
                 0x
                 </span>
-                <button class="add">+1</button>
+                <button class="add" id="twhetAdd">+1</button>
             </div>
+            <br/>
+            Tensor-Whetstone
             <br/>
             <img src="images/Tensor_Whetstone.png" alt="Tensor Whetstone" />
         </div>
         <br/>
         <div class="powercell">
             <div class="buttons">
-                <span class="display">
+                <span class="display" id="num_powercells">
                 0x
                 </span>
             </div>
+            <br/>
+            Power Cell
             <br/>
             <img src="images/Power_Cell.png" alt="Power Cell" />
         </div>
 
         <div class="grid">
             <div class="buttons">
-                <span class="display">
+                <span class="display" id="num_grids">
                 0x
                 </span>
             </div>
+            <br/>
+            Power Grid
             <br/>
             <img src="images/Power_Grid.png" alt="Power Grid" />
         </div>
     </div>
     <br/>
-    
+
     <div class="output">
         <h3>Output</h3>
         <div>
