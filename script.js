@@ -39,7 +39,7 @@ class NovasTerminal {
 
         // Compute minimum cells & grids
         this.num_powercells = Math.ceil(this.powerconsumed/5);
-        this.num_grids = Math.ceil(this.powerconsumed/5);
+        this.num_grids = Math.ceil(this.powerconsumed/8);
 
         // Fill rest of stats
         this.facilities = 1+this.num_goldgens+this.num_drills+this.num_t1+this.num_twhet+this.num_powercells+this.num_grids;
@@ -122,8 +122,10 @@ function updateDisplay() {
     // Change color if overloaded
     if (novasTerminal.facilities > novasTerminal.facilitycap) {
         document.body.style.color = "#9D4230"
+        document.body.style.background = "#080E0F"
     } else {
         document.body.style.color = "#62BDCF"
+        document.body.style.background = "#1A2F3E"
     }
 
     facilitiescount.innerHTML = `${novasTerminal.facilities}/${novasTerminal.facilitycap}`;
