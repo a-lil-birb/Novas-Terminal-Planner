@@ -284,3 +284,6 @@ num_twhet.addEventListener("input", function () {
     novasTerminal.set_facility("tw", parseInt(this.value));
     updateDisplay();
 });
+
+// Run once to ensure that input fields are cleared after a page refresh
+updateDisplay();
